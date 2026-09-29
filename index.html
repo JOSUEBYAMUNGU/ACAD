@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academy Créative (A-C-A-D) — Maison de Communication</title>
+<meta name="description" content="Academy Créative, votre maison de communication : photographie, vidéographie, création de contenu, informatique et design.">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header id="navbar">
+  <div class="nav-container">
+    <a href="#accueil" class="logo">
+      <div class="logo-circle">AC</div>
+      <div class="logo-text">
+        <h1>Academy <span>Créative</span></h1>
+        <small>A-C-A-D</small>
+      </div>
+    </a>
+
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#equipe">Équipe</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" title="Mode sombre/clair">🌙</button>
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="accueil">
+  <div class="hero-content">
+    <p class="hero-tag">✨ Maison de Communication</p>
+    <h2>Bienvenue chez <span>Academy Créative</span></h2>
+    <p class="hero-desc">
+      Photographie, vidéographie, création de contenu, informatique et design —
+      nous donnons vie à vos idées avec passion et professionnalisme.
+    </p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn btn-primary">Demander un service</a>
+      <a href="#galerie" class="btn btn-outline">Voir nos projets</a>
+    </div>
+
+    <!-- Compteurs animés -->
+    <div class="stats">
+      <div class="stat"><span class="counter" data-target="150">0</span>+<p>Projets réalisés</p></div>
+      <div class="stat"><span class="counter" data-target="80">0</span>+<p>Clients satisfaits</p></div>
+      <div class="stat"><span class="counter" data-target="12">0</span><p>Membres experts</p></div>
+      <div class="stat"><span class="counter" data-target="5">0</span><p>Années d'expérience</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="reveal">
+  <h3>Nos Services</h3>
+  <p class="subtitle">Des solutions créatives et techniques pour donner vie à vos projets</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="icon">📷</div>
+      <h4>Photographie</h4>
+      <p>Shootings professionnels, portraits, événements, produits et couvertures média.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">🎥</div>
+      <h4>Vidéographie</h4>
+      <p>Réalisation de clips, spots publicitaires, documentaires et couvertures d'événements.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">✍️</div>
+      <h4>Création de contenu</h4>
+      <p>Community management, rédaction, design graphique et stratégie digitale.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">💻</div>
+      <h4>Informatique</h4>
+      <p>Développement web, maintenance, infographie et solutions numériques sur mesure.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">🎨</div>
+      <h4>Design & Branding</h4>
+      <p>Logos, identités visuelles, affiches, flyers et supports de communication.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">📢</div>
+      <h4>Communication</h4>
+      <p>Conseil en communication, relations publiques et gestion d'image de marque.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIE ============ -->
+<section id="galerie" class="reveal">
+  <h3>Notre Galerie</h3>
+  <p class="subtitle">Découvrez quelques projets réalisés par Academy Créative</p>
+
+  <!-- Filtres -->
+  <div class="gallery-filters">
+    <button class="filter-btn active" data-filter="all">Tout</button>
+    <button class="filter-btn" data-filter="photo">📷 Photos</button>
+    <button class="filter-btn" data-filter="video">🎥 Vidéos</button>
+  </div>
+
+  <!-- PHOTOS -->
+  <h4 class="gallery-subtitle">Photographies</h4>
+  <div class="gallery-grid" id="photos-grid">
+    <div class="gallery-item" data-category="photo">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600" alt="Mariage">
+      <div class="overlay"><h5>Mariage élégant</h5><p>Photographie événementielle</p></div>
+    </div>
+    <div class="gallery-item" data-category="photo">
+      <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=600" alt="Portrait">
+      <div class="overlay"><h5>Portrait studio</h5><p>Shooting professionnel</p></div>
+    </div>
+    <div class="gallery-item" data-category="photo">
+      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600" alt="Corporate">
+      <div class="overlay"><h5>Corporate</h5><p>Photo d'entreprise</p></div>
+    </div>
+    <div class="gallery-item" data-category="photo">
+      <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600" alt="Produit">
+      <div class="overlay"><h5>Packshot produit</h5><p>Photographie publicitaire</p></div>
+    </div>
+    <div class="gallery-item" data-category="photo">
+      <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=600" alt="Concert">
+      <div class="overlay"><h5>Concert live</h5><p>Couverture média</p></div>
+    </div>
+    <div class="gallery-item" data-category="photo">
+      <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600" alt="Événement">
+      <div class="overlay"><h5>Événement corporate</h5><p>Reportage photo</p></div>
+    </div>
+  </div>
+
+  <!-- VIDÉOS -->
+  <h4 class="gallery-subtitle">Vidéos</h4>
+  <div class="gallery-grid" id="videos-grid">
+    <div class="gallery-item video-item" data-category="video">
+      <video controls poster="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600">
+        <source src="https://cdn.coverr.co/videos/coverr-a-man-working-on-a-laptop-1576/1080p.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"><h5>Spot publicitaire</h5><p>Réalisation vidéo</p></div>
+    </div>
+    <div class="gallery-item video-item" data-category="video">
+      <video controls poster="https://images.unsplash.com/photo-1519741497674-611481863552?w=600">
+        <source src="https://cdn.coverr.co/videos/coverr-a-wedding-couple-in-a-field-4677/1080p.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"><h5>Film de mariage</h5><p>Vidéographie événementielle</p></div>
+    </div>
+    <div class="gallery-item video-item" data-category="video">
+      <video controls poster="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600">
+        <source src="https://cdn.coverr.co/videos/coverr-people-working-in-an-office-1571/1080p.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"><h5>Film corporate</h5><p>Présentation d'entreprise</p></div>
+    </div>
+    <div class="gallery-item video-item" data-category="video">
+      <video controls poster="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=600">
+        <source src="https://cdn.coverr.co/videos/coverr-a-concert-with-lights-1573/1080p.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"><h5>Aftermovie concert</h5><p>Couverture événement</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MISSION ============ -->
+<section id="mission" class="reveal">
+  <div class="mission-box">
+    <h3>Notre Mission</h3>
+    <p class="subtitle">Donner à chaque projet une voix, une image et un impact</p>
+    <div class="mission-grid">
+      <div class="mission-item">
+        <h4>🎯 Mission</h4>
+        <p>Offrir des services de communication créatifs, accessibles et professionnels à toutes les entreprises et particuliers.</p>
+      </div>
+      <div class="mission-item">
+        <h4>👁️ Vision</h4>
+        <p>Devenir la maison de communication de référence, reconnue pour son excellence et son innovation.</p>
+      </div>
+      <div class="mission-item">
+        <h4>💎 Valeurs</h4>
+        <p>Créativité, professionnalisme, intégrité, écoute du client et dépassement de soi.</p>
+      </div>
+      <div class="mission-item">
+        <h4>🤝 Engagement</h4>
+        <p>Accompagner nos clients de l'idée à la réalisation, avec passion et rigueur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ÉQUIPE ============ -->
+<section id="equipe" class="reveal">
+  <h3>Notre Équipe</h3>
+  <p class="subtitle">Faites glisser pour découvrir tous nos talents →</p>
+
+  <!-- Barre de scroll horizontale : membres normaux -->
+  <div class="team-scroll">
+    <div class="member">
+      <div class="avatar">P1</div>
+      <div class="info">
+        <h5>David Mbala</h5>
+        <div class="role">Photographe Principal</div>
+        <p class="bio">Spécialiste portrait et événementiel.</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="avatar">P2</div>
+      <div class="info">
+        <h5>Sarah Nkosi</h5>
+        <div class="role">Vidéaste</div>
+        <p class="bio">Réalisation de clips et spots publicitaires.</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="avatar">P3</div>
+      <div class="info">
+        <h5>Patrick Ilunga</h5>
+        <div class="role">Développeur Web</div>
+        <p class="bio">Création de sites et applications sur mesure.</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="avatar">P4</div>
+      <div class="info">
+        <h5>Grâce Mwamba</h5>
+        <div class="role">Community Manager</div>
+        <p class="bio">Gestion des réseaux sociaux et stratégie digitale.</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="avatar">P5</div>
+      <div class="info">
+        <h5>Josué Kalonji</h5>
+        <div class="role">Infographiste</div>
+        <p class="bio">Design graphique, logos et identités visuelles.</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="avatar">P6</div>
+      <div class="info">
+        <h5>Esther Bope</h5>
+        <div class="role">Rédactrice</div>
+        <p class="bio">Rédaction de contenus et copywriting.</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="avatar">P7</div>
+      <div class="info">
+        <h5>Michel Tshibangu</h5>
+        <div class="role">Technicien Informatique</div>
+        <p class="bio">Maintenance et support technique.</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="avatar">P8</div>
+      <div class="info">
+        <h5>Rachel Mbuyi</h5>
+        <div class="role">Chargée de Clientèle</div>
+        <p class="bio">Relation client et suivi des projets.</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="avatar">P9</div>
+      <div class="info">
+        <h5>Daniel Kasongo</h5>
+        <div class="role">Monteur Vidéo</div>
+        <p class="bio">Montage et post-production audiovisuelle.</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="avatar">P10</div>
+      <div class="info">
+        <h5>Naomi Kanku</h5>
+        <div class="role">Assistante Administrative</div>
+        <p class="bio">Gestion administrative et logistique.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Direction : en dessous, centrée -->
+  <h4 class="direction-title">👑 La Direction</h4>
+  <div class="direction-grid">
+    <div class="member dg">
+      <div class="avatar">DG</div>
+      <div class="info">
+        <span class="dg-badge">DIRECTEUR GÉNÉRAL</span>
+        <h5>Jean Kabila</h5>
+        <div class="role">Fondateur & DG</div>
+        <p class="bio">Visionnaire, stratège et passionné de communication.</p>
+      </div>
+    </div>
+    <div class="member dg">
+      <div class="avatar">DA</div>
+      <div class="info">
+        <span class="dg-badge">DG ADJOINTE</span>
+        <h5>Marie Lokwa</h5>
+        <div class="role">Directrice Générale Adjointe</div>
+        <p class="bio">Coordination des équipes et gestion des projets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="reveal">
+  <h3>Contactez-nous</h3>
+  <p class="subtitle">Une question ? Un projet ? Écrivez-nous, nous vous répondrons rapidement.</p>
+  <div class="contact-container">
+
+    <div class="contact-info">
+      <h4>Nos coordonnées</h4>
+      <p><span class="ico">📍</span> Avenue de la Créativité, N° 12, Kinshasa, RDC</p>
+      <p><span class="ico">📞</span> +243 800 000 000</p>
+      <p><span class="ico">✉️</span> contact@academycreative.com</p>
+      <p><span class="ico">🌐</span> www.academycreative.com</p>
+      <p><span class="ico">🕒</span> Lun - Sam : 08h00 - 18h00</p>
+    </div>
+
+    <form action="#" method="POST" id="contact-form">
+      <label for="nom">Nom complet</label>
+      <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+
+      <label for="tel">Téléphone</label>
+      <input type="tel" id="tel" name="tel" placeholder="+243 ...">
+
+      <label for="service">Service souhaité</label>
+      <select id="service" name="service" required>
+        <option value="">-- Choisir un service --</option>
+        <option>Photographie</option>
+        <option>Vidéographie</option>
+        <option>Création de contenu</option>
+        <option>Informatique</option>
+        <option>Design & Branding</option>
+        <option>Communication</option>
+        <option>Autre</option>
+      </select>
+
+      <label for="message">Votre message</label>
+      <textarea id="message" name="message" placeholder="Décrivez votre projet..." required></textarea>
+
+      <button type="submit">Envoyer la demande</button>
+      <p id="form-feedback"></p>
+    </form>
+
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-content">
+    <div>
+      <h5>Academy Créative</h5>
+      <p>Votre partenaire de confiance pour toute votre communication.</p>
+    </div>
+    <div>
+      <h5>Liens rapides</h5>
+      <a href="#services">Services</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#equipe">Équipe</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h5>Suivez-nous</h5>
+      <p>📘 Facebook · 📸 Instagram · 🎬 YouTube · 💼 LinkedIn</p>
+    </div>
+  </div>
+  <p class="copyright">&copy; 2025 <span>Academy Créative (A-C-A-D)</span> — Tous droits réservés.</p>
+</footer>
+
+<!-- Bouton retour en haut -->
+<button id="back-to-top" title="Retour en haut">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
